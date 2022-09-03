@@ -61,9 +61,8 @@ const App = () => {
             </div>
           )}
           <div
-            className={`dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${
-              activeMenu ? "md:ml-72" : "flex-2"
-            }`}
+            className={`dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${activeMenu ? "md:ml-72" : "flex-2"
+              }`}
           >
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
               <Navbar />
@@ -73,29 +72,29 @@ const App = () => {
               {themeSettings && <ThemeSettings />}
               <Routes>
                 {/*Dashboard */}
-                <Route path="/" element={<Ecommerce />} />
-                <Route path="/ecommerce" element={<Ecommerce />} />
+                <Route path="/app/home" element={<Ecommerce />} />
+                <Route path="/app/ecommerce" element={<Ecommerce />} />
 
                 {/* Pages */}
-                <Route path="/orders" element={<Orders />} />
-                <Route path="/employees" element={<Employees />} />
-                <Route path="/customers" element={<Customers />} />
+                <Route path="/app/orders" element={<Orders />} />
+                <Route path="/app/employees" element={<Employees />} />
+                <Route path="/app/customers" element={<Customers />} />
 
                 {/* Apps */}
-                <Route path="/kanban" element={<Kanban />} />
-                <Route path="/editor" element={<Editor />} />
-                <Route path="/calendar" element={<Calendar />} />
-                <Route path="/color-picker" element={<ColorPicker />} />
+                <Route path="/app/kanban" element={<Kanban />} />
+                <Route path="/app/editor" element={<Editor />} />
+                <Route path="/app/calendar" element={<Calendar />} />
+                <Route path="/app/color-picker" element={<ColorPicker />} />
 
                 {/* Charts */}
-                <Route path="/line" element={<Line />} />
-                <Route path="/area" element={<Area />} />
-                <Route path="/bar" element={<Bar />} />
-                <Route path="/pie" element={<Pie />} />
-                <Route path="/financial" element={<Financial />} />
-                <Route path="/color-mapping" element={<ColorMapping />} />
-                <Route path="/bar" element={<Pyramid />} />
-                <Route path="/bar" element={<Stacked />} />
+                <Route path="/app/line" element={<Line />} />
+                <Route path="/app/area" element={<Area />} />
+                <Route path="/app/bar" element={<Bar />} />
+                <Route path="/app/pie" element={<Pie />} />
+                <Route path="/app/financial" element={<Financial />} />
+                <Route path="/app/color-mapping" element={<ColorMapping />} />
+                <Route path="/app/bar" element={<Pyramid />} />
+                <Route path="/app/bar" element={<Stacked />} />
               </Routes>
             </div>
           </div>
